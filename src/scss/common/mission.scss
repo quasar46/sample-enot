@@ -1,0 +1,24 @@
+.mission__box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    @media (max-width: 1279px) {
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+.mission__col {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin-bottom: 30px;
+    }
+    img {
+        border-radius: 20px;
+        overflow: hidden;
+        @media (max-width: 1279px) {
+            max-width: 360px;
+        }
+    }
+}

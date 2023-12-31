@@ -1,0 +1,13 @@
+.first-block {
+    background: var(--surface-grey, #F5F4FB);
+    border-radius: 0 0 40px 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.second-page .first-block {
+    padding-bottom: 100px;
+    @media (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+}

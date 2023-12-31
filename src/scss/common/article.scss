@@ -1,0 +1,119 @@
+.article__container {
+    max-width: 920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+
+    p {
+        margin-bottom: 40px;
+    }
+    @media(max-width: 1919px) {
+        margin-left: 330px;
+        margin-right: auto;
+    }
+    @media (max-width: 1439px) {
+        margin-right: 50px;
+    }
+    @media(max-width: 1270px) {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    @media(max-width: 767px) {
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    figure {
+        margin-bottom: 40px;
+        img {
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    p.strong {
+        margin-bottom: 60px;
+    }
+}
+
+// .article__block {
+//     margin-bottom: 40px;
+// }
+
+.article__container {
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -0.96px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        @media(max-width: 767px) {
+            font-size: 36px;
+            letter-spacing: -0.72px;
+        }
+    }
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.64px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        @media(max-width: 767px) {
+            font-size: 24px;
+            letter-spacing: -0.72px;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 110%;
+        margin-bottom: 20px;
+        margin-top: 0;
+        @media(max-width: 767px) {
+            letter-spacing: -0.48px;
+        }
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 110%;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    
+}
+
+.download {
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        color: var(--black, #333);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 130%;
+
+    }
+}
+
+.download__item {
+    margin-bottom: 45px;
+    a {
+        &:hover {
+            color: #9A0000;
+            transition: all 0.3s ease;
+            svg {
+                path {
+                    fill: #9A0000;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+}

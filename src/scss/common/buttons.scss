@@ -1,0 +1,23 @@
+.btn {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+    background-color: var(--red-color);
+    padding: 15px 25px;
+    border-radius: 55px;
+    align-self: flex-start;
+    cursor: pointer;
+    border: 3px solid transparent;
+    &:hover {
+        background: var(--hover-red, #9A0000);
+        transition: all .3s ease;
+    }
+    &:active {
+        background: var(--hover-red, #9A0000);
+        border: 3px solid var(--red, #D62121);
+        transition: all .3s ease;
+
+    }
+}

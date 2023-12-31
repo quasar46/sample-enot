@@ -1,0 +1,32 @@
+extends templates/layout
+
+block main 
+    main.second-page
+        .first-block 
+            ._container 
+                .breadcrumbs 
+                    a(href="javascript:history.back()") 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none"><path d="M10 20L0 10L10 0L11.775 1.775L3.55 10L11.775 18.225L10 20Z" fill="#333333"/></svg>
+                        span на страницу раньше
+                h1.page-title Контакты
+        .contacts 
+            ._container 
+                .contacts__box 
+                    .contacts__col 
+                        .contacts__item
+                            h4.contacts__title Телефон
+                            a(href="tel:+7 999 999-99-99") +7 999 999-99-99
+                        .contacts__item
+                            h4.contacts__title Бухгалтегия
+                            a(href="tel:+7 999 999-99-99") +7 999 999-99-99 
+                        .contacts__item
+                            h4.contacts__title Заведующий всеми заведующими в две строки
+                            a(href="tel:+7 999 999-99-99") +7 999 999-99-99 
+                        .contacts__item
+                            h4.contacts__title Email 
+                            a(href="mailto:info@plushracoon.ru") info@plushracoon.ru 
+                        .contacts__item
+                            h4.contacts__title Адрес
+                            span 305004, г. Курск, ул. Пушкина, дом Колотушкина, точный адрес скажешь ты
+                    .contacts__col.contacts__map
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=36.197282%2C51.740398&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjQ3NjM0ORI50KDQvtGB0YHQuNGPLCDQmtGD0YDRgdC6LCDRg9C70LjRhtCwINCT0L7RgNGM0LrQvtCz0L4sIDcwIgoN7ckQQhUS9k5C&z=19.3" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>

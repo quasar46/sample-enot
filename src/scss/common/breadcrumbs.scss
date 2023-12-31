@@ -1,0 +1,23 @@
+.breadcrumbs {
+    margin-bottom: 30px;
+    display: flex;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 130%;
+        text-transform: uppercase;
+        &:hover {
+            color: #9A0000;
+            transition: all .3s ease;
+            svg {
+                path {
+                    fill: #9A0000;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}

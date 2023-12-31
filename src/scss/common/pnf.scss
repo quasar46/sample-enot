@@ -1,0 +1,93 @@
+.pnf__box {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 231px;
+    padding-bottom: 231px;
+    gap: 40px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 900px;
+        height: 654px;
+        right: -100%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../img/enotik5.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media(max-width: 1919px) {
+            width: 700px;
+            height: 508px;
+        }
+        @media(max-width: 1439px) {
+            width: 620px;
+            height: 450px;
+        }
+        @media(max-width: 1279px) {
+            width: 500px;
+            height: 364px;
+            top: 80px;
+            left: 0;
+            right: auto;
+            transform: translateY(0);
+
+        }
+        @media(max-width: 767px) {
+            width: 360px;
+            height: 262px;
+            top: 40px;
+        }
+    }
+    @media (max-width: 1919px) {
+        max-width: 700px;
+    }
+    @media(max-width: 1439px) {
+        padding-bottom: 110px;
+    }
+    @media(max-width: 1279px) {
+        padding-top: 484px;
+        padding-bottom: 80px;
+    }
+    @media(max-width: 767px) {
+        padding-top: 322px;
+        gap: 20px;
+    }
+}
+
+.pnf__title {
+    color: var(--black, #333);
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 90%;
+    letter-spacing: -0.8px;
+    margin: 0;
+    span {
+        color: var(--red-color);
+    }
+    @media (max-width: 1439px) {
+        letter-spacing: -0.64px;
+    }
+    @media(max-width: 1279px) {
+        font-size: 64px;
+    }
+    @media(max-width: 767px) {
+        font-size: 36px;
+        letter-spacing: -0.36px;
+    }
+}
+
+.pnf__subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 120%;
+    @media(max-width: 1279px) {
+        font-size: 24px;
+    }
+    @media(max-width: 767px) {
+        font-size: 18px;
+    }
+}

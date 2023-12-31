@@ -1,0 +1,118 @@
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: var(--surface-grey, #F5F4FB);
+    border-radius: 40px 40px 0 0;
+    margin-top: 140px;
+    @media(max-width: 1279px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media(max-width: 767px) {
+        margin-top: 80px;
+    }
+    .site-descr {
+        font-size: 18px;
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+        @media (max-width: 1919px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    @media(max-width: 1919px) {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        width: 100%;
+        align-items: flex-start;
+        margin-right: 100px;
+    }
+    @media (max-width: 1439px) {
+        margin-right: 60px;
+    }
+
+}
+
+.footer__nav {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 230px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        color: #333;
+        svg {
+            max-width: 25px;
+            width: 100%;
+            flex:1 0 auto;
+        }
+        &:hover {
+            color: var(--red-color);
+            transition: all 0.3s ease;
+        }
+        &:nth-child(6) {
+            @media(max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+        &:hover {
+            color: var(--red-color);
+            transition: all 0.3s ease;
+
+            svg {
+                path {
+                    fill: var(--red-color);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+    @media(max-width: 1919px) {}
+    @media(max-width: 1439px) {
+        max-width: 780px;
+    }
+    @media(max-width: 767px) {
+        display: none;
+    }
+    &--m {
+        display: none;
+        @media(max-width: 767px) {
+            flex-direction: column;
+            display: flex;
+        }
+    }
+}
+
+.footer__box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+    @media (max-width: 1919px) {
+        display: flex;
+        
+    }
+    @media(max-width: 1279px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 47px;
+    }
+    @media (max-width: 767px) {
+        gap: 40px;
+    }
+}
